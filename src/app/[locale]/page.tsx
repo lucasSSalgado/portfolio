@@ -45,7 +45,6 @@ export default async function HomePage({
 		<div id="top" className="min-h-screen bg-background">
 			<Navbar />
 
-			{/* Hero Section */}
 			<section className="py-20 px-4 text-center bg-gradient-to-br from-background to-muted/20">
 				<div className="container mx-auto max-w-4xl">
 					<div className="mb-8">
@@ -94,7 +93,6 @@ export default async function HomePage({
 				</div>
 			</section>
 
-			{/* Experience Section */}
 			<section id="experience" className="py-20 px-4">
 				<div className="container mx-auto max-w-4xl">
 					<div className="text-center mb-12">
@@ -238,7 +236,6 @@ export default async function HomePage({
 
 			<Separator />
 
-			{/* Technologies Section */}
 			<section id="technologies" className="py-20 px-4">
 				<div className="container mx-auto max-w-4xl">
 					<div className="text-center mb-12">
@@ -396,7 +393,97 @@ export default async function HomePage({
 
 			<Separator />
 
-			{/* About Section */}
+			<section id="certificates" className="py-20 px-4">
+				<div className="container mx-auto max-w-4xl">
+					<div className="text-center mb-12">
+						<Badge className="mx-auto mb-4 text-primary">📜</Badge>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">Certificates</h2>
+						<p className="text-lg text-muted-foreground">
+							Recognitions and certifications I’ve earned
+						</p>
+					</div>
+
+					<div className="space-y-8">
+						<Card>
+							<CardHeader>
+								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+									<div>
+										<CardTitle className="text-xl">
+											AWS Certified Solutions Architect – Associate
+										</CardTitle>
+										<CardDescription className="text-base font-medium text-primary">
+											Amazon Web Services
+										</CardDescription>
+									</div>
+									<div className="flex items-center gap-2 text-sm text-muted-foreground">
+										<Calendar className="w-4 h-4" />
+										<time dateTime="2023">Issued 2023</time>
+									</div>
+								</div>
+							</CardHeader>
+							<CardContent>
+								<p className="text-muted-foreground">
+									Validated ability to design and deploy scalable, highly available,
+									and fault-tolerant systems on AWS.
+								</p>
+							</CardContent>
+						</Card>
+
+						<Card>
+							<CardHeader>
+								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+									<div>
+										<CardTitle className="text-xl">
+											Professional Scrum Master I (PSM I)
+										</CardTitle>
+										<CardDescription className="text-base font-medium text-primary">
+											Scrum.org
+										</CardDescription>
+									</div>
+									<div className="flex items-center gap-2 text-sm text-muted-foreground">
+										<Calendar className="w-4 h-4" />
+										<time dateTime="2022">Issued 2022</time>
+									</div>
+								</div>
+							</CardHeader>
+							<CardContent>
+								<p className="text-muted-foreground">
+									Certified in Scrum methodology, Agile practices, and servant
+									leadership for development teams.
+								</p>
+							</CardContent>
+						</Card>
+
+						<Card>
+							<CardHeader>
+								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+									<div>
+										<CardTitle className="text-xl">
+											Google Cloud Professional Data Engineer
+										</CardTitle>
+										<CardDescription className="text-base font-medium text-primary">
+											Google Cloud
+										</CardDescription>
+									</div>
+									<div className="flex items-center gap-2 text-sm text-muted-foreground">
+										<Calendar className="w-4 h-4" />
+										<time dateTime="2021">Issued 2021</time>
+									</div>
+								</div>
+							</CardHeader>
+							<CardContent>
+								<p className="text-muted-foreground">
+									Demonstrated expertise in designing, building, and managing data
+									processing systems on Google Cloud Platform.
+								</p>
+							</CardContent>
+						</Card>
+					</div>
+				</div>
+			</section>
+
+			<Separator />
+
 			<section id="about" className="py-20 px-4">
 				<div className="container mx-auto max-w-4xl">
 					<div className="text-center mb-12">
@@ -554,10 +641,8 @@ export default async function HomePage({
 				</div>
 			</section>
 
-			{/* Back to Top Button */}
 			<BackToTopButton />
 
-			{/* Footer */}
 			<footer className="py-8 px-4 border-t bg-muted/30">
 				<div className="container mx-auto max-w-4xl text-center">
 					<p className="text-muted-foreground">

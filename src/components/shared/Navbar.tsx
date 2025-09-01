@@ -31,11 +31,18 @@ export default function Navbar() {
 	const router = useRouter();
 	const currentPath = usePathname();
 
-	const navigationLinks = [
+	const navigationLinksEN = [
 		{ href: "#experience", label: "Experience" },
 		{ href: "#technologies", label: "Technologies" },
+		{ href: "#certificates", label: "Certificates" },
 		{ href: "#about", label: "How am I" },
 	];
+	/*const navigationLinksPT = [
+		{ href: "#experience", label: "Experiencia" },
+		{ href: "#technologies", label: "Tecnologias" },
+		{ href: "#certificates", label: "Certificados" },
+		{ href: "#about", label: "Sobre mim" },
+	];*/
 	const languages = [
 		{ code: "EN", label: "English" },
 		{ code: "PT ", label: "Português" },
@@ -53,15 +60,13 @@ export default function Navbar() {
 	return (
 		<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
 			<div className="container flex h-16 items-center justify-between px-4">
-				{/* Logo/Brand */}
 				<Link href="#top" className="flex items-center space-x-2">
 					<span className="text-xl font-bold">Portfolio</span>
 				</Link>
 
-				{/* Desktop Navigation */}
 				<NavigationMenu className="hidden md:flex">
 					<NavigationMenuList>
-						{navigationLinks.map((link) => (
+						{navigationLinksEN.map((link) => (
 							<NavigationMenuItem key={link.href}>
 								<NavigationMenuLink asChild>
 									<Link
@@ -76,7 +81,6 @@ export default function Navbar() {
 					</NavigationMenuList>
 				</NavigationMenu>
 
-				{/* Desktop Language Toggle */}
 				<div className="hidden md:flex items-center space-x-2">
 					<DropdownMenu>
 						<DropdownMenuTrigger asChild>
@@ -105,9 +109,7 @@ export default function Navbar() {
 					</DropdownMenu>
 				</div>
 
-				{/* Mobile Menu */}
 				<div className="flex md:hidden items-center space-x-2">
-					{/* Mobile Language Toggle */}
 					<DropdownMenu>
 						<DropdownMenuTrigger asChild>
 							<Button variant="outline" size="sm">
@@ -130,7 +132,6 @@ export default function Navbar() {
 						</DropdownMenuContent>
 					</DropdownMenu>
 
-					{/* Mobile Menu Trigger */}
 					<Sheet open={isOpen} onOpenChange={setIsOpen}>
 						<SheetTrigger asChild>
 							<Button variant="outline" size="sm">
@@ -143,7 +144,7 @@ export default function Navbar() {
 								<SheetTitle className="flex items-center space-x-2 pb-4 border-b">
 									<span className="text-lg font-semibold">Navigation</span>
 								</SheetTitle>
-								{navigationLinks.map((link) => (
+								{navigationLinksEN.map((link) => (
 									<Link
 										key={link.href}
 										href={link.href}
