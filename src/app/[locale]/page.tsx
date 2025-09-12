@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import {
 	Code,
 	Briefcase,
@@ -20,26 +20,28 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { routing } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/shared/Navbar";
 import BackToTopButton from "@/components/shared/BackToTopBtn";
 import BackToTopLink from "@/components/shared/BackToTopLink";
+import { use } from "react";
+import { useTranslations } from "next-intl";
 
-export function generateStaticParams() {
-	return routing.locales.map((locale) => ({ locale }));
-}
 
-export default async function HomePage({
+export default function HomePage({
 	params,
 }: {
 	params: Promise<{ locale: string }>;
 }) {
-	const { locale } = await params;
+	const {locale} = use(params);
+ 
+  // Enable static rendering
+  setRequestLocale(locale);
+
 
 	setRequestLocale(locale);
 
-	const t = await getTranslations("HomePage");
+	const t = useTranslations("HomePage");
 
 	return (
 		<div id="top" className="min-h-screen bg-background">
