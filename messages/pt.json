@@ -1,6 +1,14 @@
 {
   "HomePage": {
-    "title": "Ola mundo",
+    "title": "Lucas Sodré Salgado",
+    "subtitle": "Full Stack Developer",
+    "pais": "Brasil",
+    "xp": "Experiência",
+    "xp_disc": "Minha jornada profissional e principais conquistas",
+    "f1_card_title": "Desenvolvedor Java Spring Boot",
+    "f1_card_p1": "• Desenvolvimento de API para consulta interna da empresa.",
+    "f1_card_p2": "• Implementei a consulta de serviços pagos com uso de cache, otimizando o fluxo de dados e reduzindo significativamente os custos operacionais.",
+    "f1_card_p3": "• Outras atividades rotineiras: criação de testes unitários e escrever documentação",
     "about": "Go to the about page"
   }
 }

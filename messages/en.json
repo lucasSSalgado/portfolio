@@ -1,6 +1,14 @@
 {
   "HomePage": {
-    "title": "hello world",
+    "title": "Lucas Sodré Salgado",
+    "subtitle": "Desenvolvedor Full Stack",
+    "pais": "Brazil",
+    "xp": "Experience",
+    "xp_disc": "My professional journey and key accomplishments",
+    "f1_card_title": "Spring Boot Developer",
+    "f1_card_p1": "• Development of API for internal company consultation.",
+    "f1_card_p2": "• Implemented paid service queries with caching, optimizing data flow and significantly reducing operational costs.",
+    "f1_card_p3": "• Other routine activities: creating unit tests and writing documentation",
     "about": "Go to the about page"
   }
 }

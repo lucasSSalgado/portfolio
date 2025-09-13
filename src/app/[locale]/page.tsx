@@ -57,23 +57,23 @@ export default function HomePage({
 							{t("title")}
 						</h1>
 						<p className="text-xl md:text-2xl text-muted-foreground mb-6">
-							Full Stack Developer & UI/UX Enthusiast
+							{t("subtitle")}
 						</p>
 						<div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
 							<div className="flex items-center gap-2">
 								<MapPin className="w-4 h-4" />
-								<span>San Francisco, CA</span>
+								<span>Florianópolis, SC - {t("pais")}</span>
 							</div>
 							<div className="flex items-center gap-2">
 								<Mail className="w-4 h-4" />
-								<span>john@example.com</span>
+								<span>lucssslucsss@gmail.com</span>
 							</div>
 						</div>
 					</div>
 					<div className="flex justify-center gap-4">
 						<Button variant="outline" size="sm" asChild>
 							<Link
-								href="https://github.com"
+								href="https://github.com/lucasSSalgado"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -83,7 +83,7 @@ export default function HomePage({
 						</Button>
 						<Button variant="outline" size="sm" asChild>
 							<Link
-								href="https://linkedin.com"
+								href="https://www.linkedin.com/in/lucas-salgado-2a1448254/"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -99,9 +99,9 @@ export default function HomePage({
 				<div className="container mx-auto max-w-4xl">
 					<div className="text-center mb-12">
 						<Briefcase className="w-12 h-12 mx-auto mb-4 text-primary" />
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">{t("xp")}</h2>
 						<p className="text-lg text-muted-foreground">
-							My professional journey and key accomplishments
+							{t("xp_disc")}
 						</p>
 					</div>
 
@@ -111,41 +111,33 @@ export default function HomePage({
 								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
 									<div>
 										<CardTitle className="text-xl">
-											Senior Full Stack Developer
+											{t("f1_card_title")}
 										</CardTitle>
 										<CardDescription className="text-base font-medium text-primary">
-											TechCorp Solutions
+											Stefanini Consultoria S.A.
 										</CardDescription>
 									</div>
 									<div className="flex items-center gap-2 text-sm text-muted-foreground">
 										<Calendar className="w-4 h-4" />
-										<time dateTime="2022">2022 - Present</time>
+										<time dateTime="2022">21/02/2022 - 14/06/2022</time>
 									</div>
 								</div>
 							</CardHeader>
 							<CardContent>
 								<ul className="space-y-2 text-muted-foreground">
 									<li>
-										• Led development of microservices architecture serving
-										100k+ daily users
+										{t("f1_card_p1")}
 									</li>
 									<li>
-										• Implemented CI/CD pipelines reducing deployment time by
-										60%
+										{t("f1_card_p2")}
 									</li>
 									<li>
-										• Mentored 5 junior developers and conducted code reviews
-									</li>
-									<li>
-										• Built responsive web applications using React, Node.js,
-										and PostgreSQL
+										{t("f1_card_p3")}
 									</li>
 								</ul>
 								<div className="flex flex-wrap gap-2 mt-4">
-									<Badge variant="secondary">React</Badge>
-									<Badge variant="secondary">Node.js</Badge>
-									<Badge variant="secondary">PostgreSQL</Badge>
-									<Badge variant="secondary">AWS</Badge>
+									<Badge variant="secondary">Spring Boot</Badge>
+									<Badge variant="secondary">Oracle Database</Badge>
 								</div>
 							</CardContent>
 						</Card>
