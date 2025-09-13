@@ -482,9 +482,9 @@ export default function HomePage({
 				<div className="container mx-auto max-w-4xl">
 					<div className="text-center mb-12">
 						<User className="w-12 h-12 mx-auto mb-4 text-primary" />
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">How am I</h2>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">{t("about.title")}</h2>
 						<p className="text-lg text-muted-foreground">
-							Get to know me better - my personality, values, and what drives me
+							{t("about.subtitle")}
 						</p>
 					</div>
 
@@ -550,9 +550,9 @@ export default function HomePage({
 
 					<Card>
 						<CardHeader>
-							<CardTitle className="text-lg">Beyond Code</CardTitle>
+							<CardTitle className="text-lg">{t("about.beyond_title")}</CardTitle>
 							<CardDescription>
-								What I do when I&apos;m not coding
+								{t("about.beyond_subtitle")}
 							</CardDescription>
 						</CardHeader>
 						<CardContent>

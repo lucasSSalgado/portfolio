@@ -9,6 +9,11 @@
     "f1_card_p1": "• Development of API for internal company consultation.",
     "f1_card_p2": "• Implemented paid service queries with caching, optimizing data flow and significantly reducing operational costs.",
     "f1_card_p3": "• Other routine activities: creating unit tests and writing documentation",
-    "about": "Go to the about page"
+    "about": {
+      "title": "How am I",
+      "subtitle": "Get to know me better - my personality, values, and what drives me",
+      "beyond_title": "Beyond code",
+      "beyond_subtitle": "What I do when I'm not coding"
+    }
   }
 }
