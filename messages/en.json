@@ -13,7 +13,9 @@
       "title": "Technologies",
       "subtitle": "Tools and technologies I work with",
       "advenced": "Advanced",
-      "intermediate": "Intermediate"
+      "intermediate": "Intermediate",
+      "begginer": "Beginner",
+      "other_tools": "Other tools"
     }, 
     "about": {
       "title": "How am I",

@@ -285,11 +285,11 @@ export default function HomePage({
 									</div>
 									<div className="flex justify-between items-center">
 										<span>OracleDB</span>
-										<Badge>{t("tecnologies.advenced")}</Badge>
+										<Badge variant="secondary">{t("tecnologies.intermediate")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
 										<span>PostgreSQL</span>
-										<Badge>{t("tecnologies.advenced")}</Badge>
+										<Badge variant="secondary">{t("tecnologies.intermediate")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
 										<span>Redis</span>
@@ -301,83 +301,35 @@ export default function HomePage({
 
 						<Card>
 							<CardHeader>
-								<CardTitle className="text-lg">DevOps & Tools</CardTitle>
+								<CardTitle className="text-lg">{t("tecnologies.other_tools")}</CardTitle>
 							</CardHeader>
 							<CardContent>
 								<div className="space-y-3">
 									<div className="flex justify-between items-center">
-										<span>AWS</span>
-										<Badge>Advanced</Badge>
-									</div>
-									<div className="flex justify-between items-center">
 										<span>Docker</span>
-										<Badge>Advanced</Badge>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
 										<span>Git</span>
-										<Badge>Expert</Badge>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
-										<span>CI/CD</span>
-										<Badge>Advanced</Badge>
+										<span>Drizzle</span>
+										<Badge variant="secondary">{t("tecnologies.intermediate")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
-										<span>Kubernetes</span>
-										<Badge variant="secondary">Intermediate</Badge>
+										<span>Batter-auth</span>
+										<Badge variant="outline">{t("tecnologies.begginer")}</Badge>
+									</div>
+									<div className="flex justify-between items-center">
+										<span>Keycloak</span>
+										<Badge variant="outline">{t("tecnologies.begginer")}</Badge>
 									</div>
 								</div>
 							</CardContent>
 						</Card>
 					</div>
 
-					<div className="mt-12">
-						<Card>
-							<CardHeader>
-								<CardTitle className="text-lg">Recent Projects</CardTitle>
-								<CardDescription>Some of my latest work</CardDescription>
-							</CardHeader>
-							<CardContent>
-								<div className="grid md:grid-cols-2 gap-6">
-									<article className="space-y-2">
-										<h4 className="font-semibold">E-commerce Platform</h4>
-										<p className="text-sm text-muted-foreground">
-											Full-stack e-commerce solution with payment integration,
-											inventory management, and admin dashboard.
-										</p>
-										<div className="flex flex-wrap gap-1">
-											<Badge variant="outline" className="text-xs">
-												Next.js
-											</Badge>
-											<Badge variant="outline" className="text-xs">
-												Stripe
-											</Badge>
-											<Badge variant="outline" className="text-xs">
-												PostgreSQL
-											</Badge>
-										</div>
-									</article>
-									<article className="space-y-2">
-										<h4 className="font-semibold">Task Management App</h4>
-										<p className="text-sm text-muted-foreground">
-											Collaborative task management tool with real-time updates,
-											team collaboration, and analytics.
-										</p>
-										<div className="flex flex-wrap gap-1">
-											<Badge variant="outline" className="text-xs">
-												React
-											</Badge>
-											<Badge variant="outline" className="text-xs">
-												Socket.io
-											</Badge>
-											<Badge variant="outline" className="text-xs">
-												Node.js
-											</Badge>
-										</div>
-									</article>
-								</div>
-							</CardContent>
-						</Card>
-					</div>
 				</div>
 			</section>
 
@@ -628,7 +580,7 @@ export default function HomePage({
 			<footer className="py-8 px-4 border-t bg-muted/30">
 				<div className="container mx-auto max-w-4xl text-center">
 					<p className="text-muted-foreground">
-						© 2024 John Developer. Built with Next.js and Tailwind CSS.
+						© 2025 Lucas S. Salgado. Built with Next.js and Tailwind CSS.
 					</p>
 					<BackToTopLink />
 				</div>
