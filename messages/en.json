@@ -9,11 +9,23 @@
     "f1_card_p1": "• Development of API for internal company consultation.",
     "f1_card_p2": "• Implemented paid service queries with caching, optimizing data flow and significantly reducing operational costs.",
     "f1_card_p3": "• Other routine activities: creating unit tests and writing documentation",
+    "tecnologies": {
+      "title": "Technologies",
+      "subtitle": "Tools and technologies I work with",
+      "advenced": "Advanced",
+      "intermediate": "Intermediate"
+    }, 
     "about": {
       "title": "How am I",
       "subtitle": "Get to know me better - my personality, values, and what drives me",
       "beyond_title": "Beyond code",
-      "beyond_subtitle": "What I do when I'm not coding"
+      "beyond_subtitle": "What I do when I'm not coding",
+      "travel_title": "Travelling",
+      "travel_description": "Exploring wonderful nature, knowing new cultures and people",
+      "family_title": "Family",
+      "family_description": "Spending time with family is my source of joy, balance, and motivation in life.",
+      "chess_title": "Chess",
+      "chess_description": "Online chess is my favorite pastime, lulululu1997 on lichess"
     }
   }
 }

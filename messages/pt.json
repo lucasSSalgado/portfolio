@@ -9,11 +9,23 @@
     "f1_card_p1": "• Desenvolvimento de API para consulta interna da empresa.",
     "f1_card_p2": "• Implementei a consulta de serviços pagos com uso de cache, otimizando o fluxo de dados e reduzindo significativamente os custos operacionais.",
     "f1_card_p3": "• Outras atividades rotineiras: criação de testes unitários e escrever documentação",
+    "tecnologies": {
+      "title": "Tecnologias",
+      "subtitle": "Ferramentas e tecnologias que trabalho",
+      "advenced": "Avançado",
+      "intermediate": "Intermediário"
+    },  
     "about": {
       "title": "Sobre mim",
       "subtitle": "Conheça-me melhor - minha personalidade, valores e o que me motiva",
       "beyond_title": "Além do código",
-      "beyond_subtitle": "O que eu faço quando não estou codando"
+      "beyond_subtitle": "O que eu faço quando não estou codando",
+      "travel_title": "Viagens",
+      "travel_description": "Explorar maravilhas naturais, conhecer novas culturas e pessoas",
+      "family_title": "Familia",
+      "family_description": "Passar tempo com a familia é minha fonte de prazer, equilibrio e motivação.",
+      "chess_title": "Chess",
+      "chess_description": "Xadrez online é meu passatempo favorito, lulululu1997 no lichess"
     }
   }
 }

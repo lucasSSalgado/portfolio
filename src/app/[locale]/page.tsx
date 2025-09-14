@@ -235,10 +235,10 @@ export default function HomePage({
 					<div className="text-center mb-12">
 						<Code className="w-12 h-12 mx-auto mb-4 text-primary" />
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							Technologies
+							{t("tecnologies.title")}
 						</h2>
 						<p className="text-lg text-muted-foreground">
-							Tools and technologies I work with
+							{t("tecnologies.subtitle")}
 						</p>
 					</div>
 
@@ -251,23 +251,19 @@ export default function HomePage({
 								<div className="space-y-3">
 									<div className="flex justify-between items-center">
 										<span>React / Next.js</span>
-										<Badge>Expert</Badge>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
 										<span>TypeScript</span>
-										<Badge>Advanced</Badge>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
 										<span>Tailwind CSS</span>
-										<Badge>Expert</Badge>
+										<Badge variant="secondary">{t("tecnologies.intermediate")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
-										<span>Vue.js</span>
-										<Badge variant="secondary">Intermediate</Badge>
-									</div>
-									<div className="flex justify-between items-center">
-										<span>SASS/SCSS</span>
-										<Badge>Advanced</Badge>
+										<span>Shadcn/UI</span>
+										<Badge variant="secondary">{t("tecnologies.intermediate")}</Badge>
 									</div>
 								</div>
 							</CardContent>
@@ -281,23 +277,23 @@ export default function HomePage({
 								<div className="space-y-3">
 									<div className="flex justify-between items-center">
 										<span>Node.js</span>
-										<Badge>Expert</Badge>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
-										<span>Express.js</span>
-										<Badge>Advanced</Badge>
+										<span>Java - Spring</span>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
-										<span>Python</span>
-										<Badge>Advanced</Badge>
+										<span>OracleDB</span>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
 										<span>PostgreSQL</span>
-										<Badge>Advanced</Badge>
+										<Badge>{t("tecnologies.advenced")}</Badge>
 									</div>
 									<div className="flex justify-between items-center">
-										<span>MongoDB</span>
-										<Badge variant="secondary">Intermediate</Badge>
+										<span>Redis</span>
+										<Badge variant="secondary">{t("tecnologies.intermediate")}</Badge>
 									</div>
 								</div>
 							</CardContent>
@@ -558,45 +554,37 @@ export default function HomePage({
 						<CardContent>
 							<div className="grid md:grid-cols-3 gap-6">
 								<div className="text-center">
-									<div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
-										<span className="text-2xl" role="img" aria-label="Running">
-											🏃‍♂️
-										</span>
-									</div>
-									<h4 className="font-semibold mb-2">Running</h4>
-									<p className="text-sm text-muted-foreground">
-										Marathon runner who finds clarity and inspiration on long
-										runs. Currently training for my 5th marathon.
-									</p>
+								<div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
+									<span className="text-2xl" role="img" aria-label="Travelling">
+									✈️
+									</span>
+								</div>
+								<h4 className="font-semibold mb-2">{t("about.travel_title")}</h4>
+								<p className="text-sm text-muted-foreground">
+									{t("about.travel_description")}
+								</p>
 								</div>
 								<div className="text-center">
-									<div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
-										<span
-											className="text-2xl"
-											role="img"
-											aria-label="Photography"
-										>
-											📸
-										</span>
-									</div>
-									<h4 className="font-semibold mb-2">Photography</h4>
-									<p className="text-sm text-muted-foreground">
-										Capturing moments and landscapes. Photography teaches me to
-										see details and composition - skills that transfer to UI
-										design.
-									</p>
+								<div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
+									<span className="text-2xl" role="img" aria-label="Family">
+									👨‍👩‍👧‍👦
+									</span>
+								</div>
+								<h4 className="font-semibold mb-2">{t('about.family_title')}</h4>
+								<p className="text-sm text-muted-foreground">
+									{t('about.family_description')}
+								</p>
 								</div>
 								<div className="text-center">
-									<div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
-										<span className="text-2xl" role="img" aria-label="Music">
-											🎸
-										</span>
-									</div>
-									<h4 className="font-semibold mb-2">Music</h4>
-									<p className="text-sm text-muted-foreground">
-										Playing guitar and producing electronic music. Music and
-										code both require rhythm, structure, and creativity.
-									</p>
+								<div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
+									<span className="text-2xl" role="img" aria-label="Chess">
+									♟️
+									</span>
+								</div>
+								<h4 className="font-semibold mb-2">{t('about.chess_title')}</h4>
+								<p className="text-sm text-muted-foreground">
+									{t('about.chess_description')}
+								</p>
 								</div>
 							</div>
 						</CardContent>
