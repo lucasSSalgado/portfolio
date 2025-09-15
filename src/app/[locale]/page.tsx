@@ -147,15 +147,15 @@ export default function HomePage({
 								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
 									<div>
 										<CardTitle className="text-xl">
-											Frontend Developer
+											{t("card2.title")}
 										</CardTitle>
 										<CardDescription className="text-base font-medium text-primary">
-											StartupXYZ
+											Extreme Digital Services LTDA
 										</CardDescription>
 									</div>
 									<div className="flex items-center gap-2 text-sm text-muted-foreground">
 										<Calendar className="w-4 h-4" />
-										<time dateTime="2020/2022">2020 - 2022</time>
+										<time dateTime="2020/2022">{t("card2.time")}</time>
 									</div>
 								</div>
 							</CardHeader>
@@ -176,10 +176,10 @@ export default function HomePage({
 									<li>• Integrated third-party APIs and payment gateways</li>
 								</ul>
 								<div className="flex flex-wrap gap-2 mt-4">
-									<Badge variant="secondary">React</Badge>
-									<Badge variant="secondary">TypeScript</Badge>
-									<Badge variant="secondary">Tailwind CSS</Badge>
-									<Badge variant="secondary">Jest</Badge>
+									<Badge variant="secondary">Spring Boot</Badge>
+									<Badge variant="secondary">Oracle Database</Badge>
+									<Badge variant="secondary">Angular</Badge>
+									<Badge variant="secondary">Keycloak</Badge>
 								</div>
 							</CardContent>
 						</Card>
@@ -546,17 +546,16 @@ export default function HomePage({
 						<Card className="inline-block">
 							<CardContent className="p-6">
 								<h3 className="text-lg font-semibold mb-2">
-									Let&apos;s Connect!
+									{t("about.lets_connect")}
 								</h3>
 								<p className="text-muted-foreground mb-4">
-									I&apos;m always open to discussing new opportunities,
-									interesting projects, or just having a chat about technology.
+									{t("about.connect_subtitle")}
 								</p>
 								<div className="flex justify-center gap-4">
 									<Button asChild>
-										<Link href="mailto:john@example.com">
+										<Link href="mailto:lucssslucsss@gmail.com">
 											<Mail className="w-4 h-4 mr-2" />
-											Get in Touch
+											{t("about.emial_me")}
 										</Link>
 									</Button>
 									<Button variant="outline" asChild>
@@ -565,7 +564,7 @@ export default function HomePage({
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											Download Resume
+											{t("about.resume")}
 										</Link>
 									</Button>
 								</div>
