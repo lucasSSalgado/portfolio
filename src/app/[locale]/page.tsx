@@ -161,19 +161,10 @@ export default function HomePage({
 							</CardHeader>
 							<CardContent>
 								<ul className="space-y-2 text-muted-foreground">
-									<li>
-										• Developed and maintained 15+ React components in design
-										system
-									</li>
-									<li>
-										• Improved application performance by 40% through code
-										optimization
-									</li>
-									<li>
-										• Collaborated with UX team to implement pixel-perfect
-										designs
-									</li>
-									<li>• Integrated third-party APIs and payment gateways</li>
+									<li>{t("card2.p1")}</li>
+									<li>{t("card2.p2")}</li>
+									<li>{t("card2.p3")}</li>
+									<li>{t("card2.p4")}</li>
 								</ul>
 								<div className="flex flex-wrap gap-2 mt-4">
 									<Badge variant="secondary">Spring Boot</Badge>
@@ -189,38 +180,37 @@ export default function HomePage({
 								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
 									<div>
 										<CardTitle className="text-xl">
-											Junior Web Developer
+											Nextjs Full Stack
 										</CardTitle>
 										<CardDescription className="text-base font-medium text-primary">
-											Digital Agency Pro
+											Atualprev
 										</CardDescription>
 									</div>
 									<div className="flex items-center gap-2 text-sm text-muted-foreground">
-										<Calendar className="w-4 h-4" />
-										<time dateTime="2019/2020">2019 - 2020</time>
+										<a className="text-primary underline text-xl" href="https://rppsdigital.com.br/" target="_blank">
+											Rpps Digital
+										</a>
 									</div>
 								</div>
 							</CardHeader>
 							<CardContent>
 								<ul className="space-y-2 text-muted-foreground">
-									<li>
-										• Built responsive websites for 20+ clients using HTML, CSS,
-										and JavaScript
-									</li>
-									<li>
-										• Implemented SEO best practices improving search rankings
-										by 30%
-									</li>
-									<li>
-										• Maintained WordPress sites and custom PHP applications
-									</li>
-									<li>• Provided technical support and training to clients</li>
+									<li> {t("card3.p1")}</li>
+									<li> {t("card3.p2")}</li>
+									<li> {t("card3.p3")}</li>
+									<li> {t("card3.p4")}</li>
+									<li> {t("card3.p5")}</li>
+									<li> {t("card3.p6")}</li>
 								</ul>
 								<div className="flex flex-wrap gap-2 mt-4">
-									<Badge variant="secondary">HTML/CSS</Badge>
-									<Badge variant="secondary">JavaScript</Badge>
-									<Badge variant="secondary">WordPress</Badge>
-									<Badge variant="secondary">PHP</Badge>
+									<Badge variant="secondary">Nextjs</Badge>
+									<Badge variant="secondary">Drizzle</Badge>
+									<Badge variant="secondary">Postgres Database</Badge>
+									<Badge variant="secondary">Auth.js</Badge>
+									<Badge variant="secondary">Tailwind</Badge>
+									<Badge variant="secondary">Typescript</Badge>
+									<Badge variant="secondary">Shadcn/UI</Badge>
+									<Badge variant="secondary">Coolify</Badge>
 								</div>
 							</CardContent>
 						</Card>
@@ -349,50 +339,71 @@ export default function HomePage({
 						<Card>
 							<CardHeader>
 								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-									<div>
-										<CardTitle className="text-xl">
-											AWS Certified Solutions Architect – Associate
-										</CardTitle>
-										<CardDescription className="text-base font-medium text-primary">
-											Amazon Web Services
-										</CardDescription>
-									</div>
-									<div className="flex items-center gap-2 text-sm text-muted-foreground">
-										<Calendar className="w-4 h-4" />
-										<time dateTime="2023">Issued 2023</time>
-									</div>
+								<div>
+									<CardTitle className="text-xl">
+									CS50x
+									</CardTitle>
+									<CardDescription className="text-base font-medium text-primary">
+									University of Harvard
+									</CardDescription>
+								</div>
+								<div className="flex items-center gap-2 text-sm text-muted-foreground">
+									<Calendar className="w-4 h-4" />
+									<time dateTime="2023">{t("certificates.cs50x_date")}</time>
+								</div>
 								</div>
 							</CardHeader>
 							<CardContent>
-								<p className="text-muted-foreground">
-									Validated ability to design and deploy scalable, highly available,
-									and fault-tolerant systems on AWS.
-								</p>
+								<p className="text-muted-foreground">{t("certificates.cs50x_description")}</p>
+								<a
+									href="/certificates/CS50x.pdf"
+									target="_blank"
+									download
+									className="inline-block mt-3 text-sm text-primary hover:underline"
+								>
+								📥 Download
+								</a>
 							</CardContent>
 						</Card>
 
 						<Card>
 							<CardHeader>
 								<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-									<div>
-										<CardTitle className="text-xl">
-											Professional Scrum Master I (PSM I)
-										</CardTitle>
-										<CardDescription className="text-base font-medium text-primary">
-											Scrum.org
-										</CardDescription>
-									</div>
-									<div className="flex items-center gap-2 text-sm text-muted-foreground">
-										<Calendar className="w-4 h-4" />
-										<time dateTime="2022">Issued 2022</time>
-									</div>
+								<div>
+									<CardTitle className="text-xl">
+									Typescript and Graphql
+									</CardTitle>
+									<CardDescription className="text-base font-medium text-primary">
+									University of Helsilki  
+									</CardDescription>
+								</div>
+								<div className="flex items-center gap-2 text-sm text-muted-foreground">
+									<Calendar className="w-4 h-4" />
+									<time dateTime="2023">{t("certificates.cs50x_date")}</time>
+								</div>
 								</div>
 							</CardHeader>
 							<CardContent>
-								<p className="text-muted-foreground">
-									Certified in Scrum methodology, Agile practices, and servant
-									leadership for development teams.
-								</p>
+								<p className="text-muted-foreground">{t("certificates.helsilki_description")}</p>
+								<div className="flex flex-col md:flex-row md:items-center md:justify-around gap-2">
+									<a
+										href="/certificates/certificate-graphql.png"
+										target="_blank"
+										download
+										className="inline-block mt-3 text-sm text-primary hover:underline"
+									>
+									📥 Download GraphQl
+									</a>
+
+									<a
+										href="/certificates/certificate-typescript.png"
+										target="_blank"
+										download
+										className="inline-block mt-3 text-sm text-primary hover:underline"
+									>
+									📥 Download Typescript
+									</a>
+								</div>
 							</CardContent>
 						</Card>
 

@@ -12,7 +12,18 @@
     "card2": {
       "title": "Spring Boot Developer",
       "time": "20/06/2022 - Present",
-      "p1": ""
+      "p1": "• Creating APIs for consumption by the Angular frontend. Government project that handles death taxes and donations for the state of Minas Gerais - Brazil.",
+      "p2": "• I followed and was part of the entire development of the ITCD doação (donation taxes) project, which was migrated from a monolith to a microservices architecture.",
+      "p3": "• I implemented PDF generation and certification through Lacuna Software",
+      "p4": "• Authentication integration through Keycloak"
+    },
+    "card3": {
+      "p1": "• Creation of a retirement management system for civil servants in small towns.",
+      "p2": "• Allow administrators to analyze and manage their employees' hiring contributions. This allows for the provision of additional information that is automatically considered in projections.",
+      "p3": "• Implementation of a scheduling system. Admins provide available schedules, and the system allows users to schedule appointments, respecting the different municipalities.",
+      "p4": "• PDF generation with react-pdf for the projection system.",
+      "p5": "• Designed with special attention to application performance, user usability, and best security practices.",
+      "p6": "• Deploy the application on a VPS using Coolify."
     },
     "tecnologies": {
       "title": "Technologies",
@@ -22,6 +33,13 @@
       "begginer": "Beginner",
       "other_tools": "Other tools"
     }, 
+    "certificates": {
+      "title": "Certificates",
+      "subtitle": "Recognitions and certifications I’ve earned",
+      "cs50x_date": "Issued 2023",
+      "cs50x_description": "A indrotuction to computer science. Basic of C, Python and web tecnologies (HTML, CSS and JS)",
+      "helsilki_description": "Two separate course, one about typescript, the superset of javascript, and the other about graphql, a alternative way of building the communication between the backend and the frontend"
+    },
     "about": {
       "title": "How am I",
       "subtitle": "Get to know me better - my personality, values, and what drives me",

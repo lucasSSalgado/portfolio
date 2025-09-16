@@ -12,7 +12,18 @@
     "card2": {
       "title": "Desenvolvedor Spring Boot",
       "time": "20/06/2022 - Atual",
-      "p1": ""
+      "p1": "• Criação de APIs para consumo do frontend em Angular. Projeto governamental que lida com impostos de causa mortis e doações para o estado de Minas Gerais.",
+      "p2": "• Acompanhei e fiz parte de todo o desenvolvimento do projeto de ITCD doação, que foi migrado de um monilito para uma arquitetura de microserviços.",
+      "p3": "• Implementei a geração e certificação de PDFs atraves do Lacuna Software",
+      "p4": "• Integração de autenticação atraves do Keycloak "
+    },
+    "card3": {
+      "p1": "• Criação de um sistema de gestão de aposentadoria para servidores de pequenas cidades.",
+      "p2": "• Permitir que administradores analisem e gerencie as solicitações de aposentadoria de seus colaboradores. Permitindo a importações de informações adicionois que são automaticamente consideradas nas projeções.",
+      "p3": "• Implementação da um sistema de agendamentos. Adms fornecem os orarios disponíveis e o sistema permite que os usuário agendem conusltas, respeitando os diferentes municípios",
+      "p4": "• Geração de PDF com o react-pdf para o sistema de projeções",
+      "p5": "• Feito com atenção especial a performace da aplicação, da usuabilidade dos usuários e das melhores práticas de segurança.",
+      "p6": "• Deploy da aplicação em uma VPS usando Coolify."
     },
     "tecnologies": {
       "title": "Tecnologias",
@@ -22,6 +33,13 @@
       "begginer": "Iniciante",
       "other_tools": "Outras ferramentas"
     },  
+    "certificates": {
+      "title": "Certificates",
+      "subtitle": "Recognitions and certifications I’ve earned",
+      "cs50x_date": "Emitido em 2023",
+      "cs50x_description": "Uma introdução ao desenvolvimento de software. Básico de C, Python e tecnologias web (HTML, CSS e JS)",
+      "helsilki_description": "Two separate course, one about typescript, the superset of javascript, and the other about graphql, a alternative way of building the communication between the backend and the frontend"
+    },
     "about": {
       "title": "Sobre mim",
       "subtitle": "Conheça-me melhor - minha personalidade, valores e o que me motiva",
