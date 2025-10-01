@@ -13,7 +13,7 @@ export default function BackToTopButton() {
 			<Button
 				onClick={scrollToTop}
 				size="icon"
-				className="rounded-full shadow-lg hover:shadow-xl transition-shadow"
+				className="rounded-full shadow-lg hover:shadow-xl transition-shadow hover:cursor-pointer"
 				aria-label="Back to top"
 			>
 				<ArrowUp className="w-4 h-4" />

@@ -25,7 +25,7 @@
       "p5": "• Designed with special attention to application performance, user usability, and best security practices.",
       "p6": "• Deploy the application on a VPS using Coolify."
     },
-    "tecnologies": {
+    "technologies": {
       "title": "Technologies",
       "subtitle": "Tools and technologies I work with",
       "advenced": "Advanced",
@@ -37,7 +37,7 @@
       "title": "Certificates",
       "subtitle": "Recognitions and certifications I’ve earned",
       "cs50x_date": "Issued 2023",
-      "cs50x_description": "A indrotuction to computer science. Basic of C, Python and web tecnologies (HTML, CSS and JS)",
+      "cs50x_description": "A indrotuction to computer science. Basic of C, Python and web technologies (HTML, CSS and JS)",
       "helsilki_description": "Two separate course, one about typescript, the superset of javascript, and the other about graphql, a alternative way of building the communication between the backend and the frontend"
     },
     "about": {

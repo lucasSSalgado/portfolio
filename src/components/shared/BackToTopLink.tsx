@@ -11,7 +11,7 @@ export default function BackToTopLink() {
 		<Button
 			variant="link"
 			onClick={scrollToTop}
-			className="mt-2 text-primary hover:text-primary/80"
+			className="mt-2 text-secondary hover:cursor-pointer"
 		>
 			Back to Top ↑
 		</Button>
