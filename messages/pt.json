@@ -43,6 +43,24 @@
     "about": {
       "title": "Sobre mim",
       "subtitle": "Conheça-me melhor - minha personalidade, valores e o que me motiva",
+      "personal_valies": {
+        "title": "Valores Pessoais",
+        "t1": "🎯 Solucionador de Problemas",
+        "p1": "Sinto uma satisfação estranha ao depurar código. Há algo muito gratificante em caçar a causa raiz de um problema e transformar o caos em clareza. Pra mim, cada bug complicado é uma oportunidade de aprender — e talvez me gabar depois.",
+        "t2": "🤝 Jogador de Equipe",
+        "p2": "Adoro trabalhar com pessoas que se importam com o que fazem. Seja programando em par, revisando pull requests ou compartilhando momentos de 'aha!', acredito que a colaboração transforma boas ideias em ideias incríveis.",
+        "t3": "📚 Aprendiz Contínuo",
+        "p3": "A tecnologia evolui rápido — e é exatamente isso que me mantém viciado. Estou sempre testando novos frameworks, experimentando padrões de design ou lendo sobre como outras pessoas resolveram problemas que eu ainda nem encontrei…"
+      },
+      "working_style": {
+        "title": "Estilo de Trabalho",
+        "t1": "🔍 Atento aos Detalhes",
+        "p1": "Acredito que capricho não é opcional — é parte do ofício. Desde nomear variáveis de forma clara até ajustar o espaçamento da interface, os pequenos detalhes se somam e criam algo que as pessoas realmente gostam de usar.",
+        "t2": "⚡ Adaptável e Pragmático",
+        "p2": "Gosto de me mover rápido, mas sem imprudência. Itero, testo e ajusto com base em feedback real — porque um bom software não é escrito de uma vez, ele evolui.",
+        "t3": "🎨 Focado no Usuário",
+        "p3": "Por trás de cada chamada de API e de cada pixel há uma pessoa tentando realizar algo. Eu programo pensando nela — criando experiências que sejam fluidas, intuitivas e que respeitem o tempo do usuário."
+      },
       "beyond_title": "Além do código",
       "beyond_subtitle": "O que eu faço quando não estou codando",
       "travel_title": "Viagens",

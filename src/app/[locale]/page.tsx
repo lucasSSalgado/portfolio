@@ -36,12 +36,7 @@
 	}) {
 		const {locale} = use(params);
 	
-	// Enable static rendering
-	setRequestLocale(locale);
-
-
 		setRequestLocale(locale);
-
 		const t = useTranslations("HomePage");
 
 		return (
@@ -451,62 +446,57 @@
 						<div className="grid md:grid-cols-2 gap-8 mb-12">
 							<Card>
 								<CardHeader>
-									<CardTitle className="text-lg">Personal Values</CardTitle>
+								<CardTitle className="text-lg">{t("about.personal_valies.title")}</CardTitle>
 								</CardHeader>
 								<CardContent className="space-y-4">
-									<div>
-										<h4 className="font-semibold mb-2">🎯 Problem Solver</h4>
-										<p className="text-sm text-primary">
-											I thrive on tackling complex challenges and finding elegant
-											solutions. Every bug is a puzzle waiting to be solved.
-										</p>
-									</div>
-									<div>
-										<h4 className="font-semibold mb-2">🤝 Team Player</h4>
-										<p className="text-sm text-primary">
-											Collaboration is key to great software. I believe in sharing
-											knowledge, mentoring others, and learning from my peers.
-										</p>
-									</div>
-									<div>
-										<h4 className="font-semibold mb-2">📚 Continuous Learner</h4>
-										<p className="text-sm text-primary">
-											Technology evolves rapidly, and so do I. I&apos;m always
-											exploring new frameworks, tools, and best practices.
-										</p>
-									</div>
+								<div>
+									<h4 className="font-semibold mb-2">{t("about.personal_valies.t1")}</h4>
+									<p className="text-sm text-primary">
+									{t("about.personal_valies.p1")}
+									</p>
+								</div>
+								<div>
+									<h4 className="font-semibold mb-2">{t("about.personal_valies.t2")}</h4>
+									<p className="text-sm text-primary">
+									{t("about.personal_valies.p2")}
+									</p>
+								</div>
+								<div>
+									<h4 className="font-semibold mb-2">{t("about.personal_valies.t3")}</h4>
+									<p className="text-sm text-primary">
+									{t("about.personal_valies.p3")}
+									</p>
+								</div>
 								</CardContent>
 							</Card>
 
 							<Card>
 								<CardHeader>
-									<CardTitle className="text-lg">Work Style</CardTitle>
+								<CardTitle className="text-lg">{t("about.working_style.title")}</CardTitle>
 								</CardHeader>
 								<CardContent className="space-y-4">
-									<div>
-										<h4 className="font-semibold mb-2">🔍 Detail-Oriented</h4>
-										<p className="text-sm text-primary">
-											I believe great software is in the details. From clean code
-											to pixel-perfect UIs, quality matters.
-										</p>
-									</div>
-									<div>
-										<h4 className="font-semibold mb-2">⚡ Agile Mindset</h4>
-										<p className="text-sm text-primary">
-											I embrace iterative development, quick feedback loops, and
-											adapting to changing requirements.
-										</p>
-									</div>
-									<div>
-										<h4 className="font-semibold mb-2">🎨 User-Focused</h4>
-										<p className="text-sm text-primary">
-											Every line of code I write serves a user. I prioritize user
-											experience and accessibility in all my projects.
-										</p>
-									</div>
+								<div>
+									<h4 className="font-semibold mb-2">{t("about.working_style.t1")}</h4>
+									<p className="text-sm text-primary">
+									{t("about.working_style.p1")}
+									</p>
+								</div>
+								<div>
+									<h4 className="font-semibold mb-2">{t("about.working_style.t2")}</h4>
+									<p className="text-sm text-primary">
+									{t("about.working_style.p2")}
+									</p>
+								</div>
+								<div>
+									<h4 className="font-semibold mb-2">{t("about.working_style.t3")}</h4>
+									<p className="text-sm text-primary">
+									{t("about.working_style.p3")}
+									</p>
+								</div>
 								</CardContent>
 							</Card>
-						</div>
+							</div>
+
 
 						<Card>
 							<CardHeader>

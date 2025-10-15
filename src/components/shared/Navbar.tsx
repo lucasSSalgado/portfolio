@@ -37,7 +37,6 @@ export default function Navbar() {
 	];
 
 	const path = usePathname();
-
 	const [navigationLinks, setNavigationLinks] = useState(navigationLinksEN);
 
 	useEffect(() => {

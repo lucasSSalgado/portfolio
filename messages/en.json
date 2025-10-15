@@ -43,6 +43,24 @@
     "about": {
       "title": "How am I",
       "subtitle": "Get to know me better - my personality, values, and what drives me",
+      "personal_valies": {
+        "title": "Personal Values",
+        "t1": "🎯 Problem Solver",
+        "p1": "I get a weird amount of joy from debugging. There’s something satisfying about chasing down the root cause of an issue and turning chaos into clarity. For me, every tricky bug is an opportunity to learn — and maybe brag about later.",
+        "t2": "🤝 Team Player",
+        "p2": "I love working with people who care about what they do. Whether it’s pair programming, reviewing pull requests, or just sharing “aha!” moments, I believe collaboration turns good ideas into great ones.",
+        "t3": "📚 Continuous Learner",
+        "p3": "Tech moves fast — and that’s exactly what keeps me hooked. I’m constantly tinkering with new frameworks, experimenting with design patterns, or reading about how others solve the problems I haven’t hit… yet."
+      },
+      "working_style": {
+        "title": "Work Style",
+        "t1": "🔍 Detail-Oriented",
+        "p1": "I believe polish isn’t optional — it’s part of the craft. From naming variables that make sense to fine-tuning UI spacing, the small things add up to something people actually enjoy using.",
+        "t2": "⚡ Adaptive & Pragmatic",
+        "p2": "I like to move fast, but not recklessly. I iterate, test, and adjust based on real feedback — because good software isn’t written once, it’s evolved.",
+        "t3": "🎨 User-Driven",
+        "p3": "Behind every API call and pixel is a person trying to get something done. I code with that person in mind — designing experiences that feel smooth, intuitive, and respectful of their time."
+      },
       "beyond_title": "Beyond code",
       "beyond_subtitle": "What I do when I'm not coding",
       "travel_title": "Travelling",
