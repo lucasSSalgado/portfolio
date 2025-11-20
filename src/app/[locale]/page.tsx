@@ -9,6 +9,7 @@
 		GraduationCap,
 		Github,
 		Linkedin,
+		FileDown
 	} from "lucide-react";
 	import Link from "next/link";
 
@@ -85,6 +86,16 @@
 								>
 									<Linkedin className="w-4 h-4 mr-2" />
 									LinkedIn
+								</Link>
+							</Button>
+							<Button
+								className="bg-secondary-foreground text-secondary" variant="default" size="sm" asChild>
+								<Link
+									href={locale === "pt" ? "/resume-pt.pdf" : "/resume-en.pdf"}
+									download
+								>
+									<FileDown className="w-4 h-4 mr-2" />
+									{t("resume")}
 								</Link>
 							</Button>
 						</div>
