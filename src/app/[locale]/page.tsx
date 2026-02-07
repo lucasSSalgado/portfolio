@@ -573,7 +573,7 @@
 										</Button>
 										<Button variant="outline" asChild>
 											<Link
-												href="/resume.pdf"
+												href={locale === "pt" ? "/resume-pt.pdf" : "/resume-en.pdf"}
 												target="_blank"
 												rel="noopener noreferrer"
 											>
