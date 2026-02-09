@@ -413,31 +413,6 @@
 									</div>
 								</CardContent>
 							</Card>
-
-							<Card>
-								<CardHeader>
-									<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-										<div>
-											<CardTitle className="text-xl">
-												Google Cloud Professional Data Engineer
-											</CardTitle>
-											<CardDescription className="text-base font-medium text-primary">
-												Google Cloud
-											</CardDescription>
-										</div>
-										<div className="flex items-center gap-2 text-sm text-primary">
-											<Calendar className="w-4 h-4" />
-											<time dateTime="2021">Issued 2021</time>
-										</div>
-									</div>
-								</CardHeader>
-								<CardContent>
-									<p className="text-primary">
-										Demonstrated expertise in designing, building, and managing data
-										processing systems on Google Cloud Platform.
-									</p>
-								</CardContent>
-							</Card>
 						</div>
 					</div>
 				</section>
@@ -592,7 +567,7 @@
 				<footer className="py-8 px-4 border-t bg-primary">
 					<div className="container mx-auto max-w-4xl text-center">
 						<p className="text-secondary">
-							© 2025 Lucas S. Salgado. Built with Next.js and Tailwind CSS.
+							© { new Date().getFullYear() } Lucas S. Salgado. Built with Next.js and Tailwind CSS.
 						</p>
 						<BackToTopLink />
 					</div>
