@@ -48,7 +48,12 @@
 					<div className="container mx-auto max-w-4xl">
 						<div className="mb-8">
 							<div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
-								<User className="w-16 h-16 text-primary" />
+								{/*<User className="w-16 h-16 text-primary" /> */}
+								<img
+									src="/foto_feira_cortes.jpeg"
+									alt="Foto de perfil"
+									className="w-full h-full object-cover rounded-full"
+								/>
 							</div>
 							<h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-primary">
 								{t("title")}
