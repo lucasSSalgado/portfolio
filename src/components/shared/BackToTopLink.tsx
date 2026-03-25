@@ -13,7 +13,7 @@ export default function BackToTopLink() {
 			onClick={scrollToTop}
 			className="mt-2 text-secondary hover:cursor-pointer"
 		>
-			Back to Top ↑
+			Back to Top
 		</Button>
 	);
 }

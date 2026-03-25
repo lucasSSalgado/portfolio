@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Globe } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -26,32 +25,26 @@ export default function Navbar() {
 		{ href: "#about", label: "About Me" },
 	];
 	const navigationLinksPT = [
-		{ href: "#experience", label: "Experiência" },
+		{ href: "#experience", label: "Experiencia" },
 		{ href: "#technologies", label: "Tecnologias" },
 		{ href: "#certificates", label: "Certificados" },
 		{ href: "#about", label: "Sobre Mim" },
 	];
 	const languages = [
 		{ code: "en", label: "English" },
-		{ code: "pt", label: "Português" },
+		{ code: "pt", label: "Portugues" },
 	];
 
 	const path = usePathname();
-	const [navigationLinks, setNavigationLinks] = useState(navigationLinksEN);
-
-	useEffect(() => {
-		if (path === "/pt") {
-			setNavigationLinks(navigationLinksPT);
-		} else {
-			setNavigationLinks(navigationLinksEN);
-		}		
-	}, [path]);
+	const navigationLinks = path === "/pt" ? navigationLinksPT : navigationLinksEN;
 
 	return (
-		<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-			<div className="flex h-16 items-center justify-between px-4">
-				<Link href="#top" className="flex items-center space-x-2">
-					<span className="text-xl font-bold">Portfolio</span>
+		<header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/70">
+			<div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+				<Link href="#top" className="group flex items-center space-x-2">
+					<span className="bg-gradient-to-r from-primary to-amber-600 bg-clip-text text-xl font-bold tracking-tight text-transparent transition-opacity group-hover:opacity-85">
+						Portfolio
+					</span>
 				</Link>
 
 				<NavigationMenu className="hidden md:flex">
@@ -61,7 +54,7 @@ export default function Navbar() {
 								<NavigationMenuLink asChild>
 									<Link
 										href={link.href}
-										className="group bg-secondary inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-secondary/80 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+										className="inline-flex h-9 w-max items-center justify-center rounded-full border border-border/60 bg-card/60 px-4 py-2 text-sm font-medium text-foreground/85 transition-all hover:-translate-y-0.5 hover:bg-card"
 									>
 										{link.label}
 									</Link>
@@ -71,14 +64,10 @@ export default function Navbar() {
 					</NavigationMenuList>
 				</NavigationMenu>
 
-				<div className="hidden md:flex items-center space-x-2">
+				<div className="hidden items-center space-x-2 md:flex">
 					<DropdownMenu>
 						<DropdownMenuTrigger asChild>
-							<Button
-								variant="outline"
-								size="sm"
-								className="gap-2 bg-transparent"
-							>
+							<Button variant="outline" size="sm" className="gap-2 bg-background/60">
 								<Globe className="h-4 w-4" />
 								{languages.find((language) => language.code === path.slice(1))?.label}
 							</Button>
@@ -93,10 +82,10 @@ export default function Navbar() {
 					</DropdownMenu>
 				</div>
 
-				<div className="flex md:hidden items-center space-x-2">
+				<div className="flex items-center space-x-2 md:hidden">
 					<DropdownMenu>
 						<DropdownMenuTrigger asChild>
-							<Button variant="outline" size="sm">
+							<Button variant="outline" size="sm" className="bg-background/60">
 								<Globe className="h-4 w-4" />
 								<span className="sr-only">Change language</span>
 							</Button>
