@@ -92,7 +92,7 @@ export default function HomePage({
 								className="h-full w-full rounded-full object-cover"
 							/>
 						</div>
-						<h1 className="mb-4 bg-gradient-to-r from-primary to-amber-600 bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-6xl reveal reveal-delay-1">
+						<h1 className="mb-4 bg-gradient-to-r from-primary to-amber-600 bg-clip-text pb-1 text-4xl font-bold leading-tight tracking-tight text-transparent md:text-6xl reveal reveal-delay-1">
 							{t("title")}
 						</h1>
 						<p className="mb-6 text-xl text-foreground/85 md:text-2xl reveal reveal-delay-2">{t("subtitle")}</p>
