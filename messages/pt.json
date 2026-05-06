@@ -26,6 +26,15 @@
       "p5": "• Feito com atenção especial a performace da aplicação, da usuabilidade dos usuários e das melhores práticas de segurança.",
       "p6": "• Deploy da aplicação em uma VPS usando Coolify."
     },
+    "card4": {
+      "title": "Founder & Desenvolvedor Full Stack",
+      "time": "2026 - Atual",
+      "p1": "• Criei e lancei o momonei, meu primeiro SaaS, focado em gestão financeira compartilhada para casais e famílias.",
+      "p2": "• Implementei fluxos de despesas, receitas, metas, contas recorrentes, compartilhamento familiar, dashboards e histórico financeiro.",
+      "p3": "• Adicionei autenticação pronta para produção com verificação de email, redefinição de senha, sessões seguras e proteção de conta.",
+      "p4": "• Integrei assinaturas com Stripe, webhooks, portal de cobrança e restauração de acesso após o checkout.",
+      "p5": "• Entreguei suporte PWA com notificações push para lembretes recorrentes e fluxo de deploy em produção usando Docker."
+    },
     "technologies": {
       "title": "Tecnologias",
       "subtitle": "Ferramentas e tecnologias que trabalho",

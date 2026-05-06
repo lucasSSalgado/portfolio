@@ -26,6 +26,15 @@
       "p5": "• Designed with special attention to application performance, user usability, and best security practices.",
       "p6": "• Deploy the application on a VPS using Coolify."
     },
+    "card4": {
+      "title": "Founder & Full Stack Developer",
+      "time": "2026 - Present",
+      "p1": "• Built and launched momonei, my first SaaS product, focused on shared household finance management for couples and families.",
+      "p2": "• Implemented expense, income, goals, recurring bills, household sharing, dashboards, and financial history flows.",
+      "p3": "• Added production-grade authentication with email verification, password reset, secure sessions, and account protection.",
+      "p4": "• Integrated Stripe subscription billing, webhooks, billing portal access, and access restoration after checkout.",
+      "p5": "• Delivered PWA support with push notifications for recurring reminders and a production deployment flow using Docker."
+    },
     "technologies": {
       "title": "Technologies",
       "subtitle": "Tools and technologies I work with",

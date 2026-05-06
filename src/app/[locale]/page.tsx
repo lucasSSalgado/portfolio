@@ -8,6 +8,7 @@ import {
 	GraduationCap,
 	Github,
 	Linkedin,
+	Twitter,
 	FileDown,
 	Plane,
 	Users,
@@ -36,9 +37,40 @@ export default function HomePage({
 	const { locale } = use(params);
 	setRequestLocale(locale);
 	const t = useTranslations("HomePage");
+	const personJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "Person",
+		name: "Lucas Sodre Salgado",
+		jobTitle: "Full Stack Developer",
+		email: "mailto:lucssslucsss@gmail.com",
+		address: {
+			"@type": "PostalAddress",
+			addressLocality: "Florianopolis",
+			addressRegion: "SC",
+			addressCountry: "BR",
+		},
+		url: locale === "pt" ? "/pt" : "/en",
+		sameAs: [
+			"https://github.com/lucasSSalgado",
+			"https://www.linkedin.com/in/lucas-salgado-2a1448254/",
+			"https://x.com/lss_lss_",
+			"https://momonei.com",
+		],
+		knowsAbout: [
+			"Next.js",
+			"TypeScript",
+			"React",
+			"Spring Boot",
+			"PostgreSQL",
+			"Stripe",
+			"Docker",
+			"SaaS",
+		],
+	};
 
 	return (
 		<div id="top" className="relative min-h-screen overflow-x-hidden bg-background">
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
 			<MouseGlow />
 			<div className="pointer-events-none absolute inset-0 -z-10">
 				<div className="float-slow absolute -left-24 top-20 h-56 w-56 rounded-full bg-primary/15 blur-3xl" />
@@ -90,6 +122,12 @@ export default function HomePage({
 							>
 								<Linkedin className="mr-2 h-4 w-4" />
 								LinkedIn
+							</Link>
+						</Button>
+						<Button variant="outline" className="bg-background/80 transition-transform hover:-translate-y-0.5" asChild>
+							<Link href="https://x.com/lss_lss_" target="_blank" rel="noopener noreferrer">
+								<Twitter className="mr-2 h-4 w-4" />
+								X / Twitter
 							</Link>
 						</Button>
 						<Button variant="outline" className="bg-background/80 transition-transform hover:-translate-y-0.5" asChild>
@@ -205,6 +243,51 @@ export default function HomePage({
 									<Badge variant="secondary">TypeScript</Badge>
 									<Badge variant="secondary">Shadcn/UI</Badge>
 									<Badge variant="secondary">Coolify</Badge>
+								</div>
+							</CardContent>
+						</Card>
+
+						<Card className="surface-card reveal reveal-delay-2">
+							<CardHeader>
+								<div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+									<div>
+										<CardTitle className="text-xl">{t("card4.title")}</CardTitle>
+										<CardDescription className="text-base font-medium text-foreground/80">momonei</CardDescription>
+									</div>
+									<div className="flex flex-col gap-2 md:items-end">
+										<div className="flex items-center gap-2 text-sm text-muted-foreground">
+											<Calendar className="h-4 w-4" />
+											<time dateTime="2026">{t("card4.time")}</time>
+										</div>
+										<a
+											className="text-sm text-primary underline-offset-4 transition-colors hover:text-primary/70 hover:underline"
+											href="https://momonei.com"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											momonei.com
+										</a>
+									</div>
+								</div>
+							</CardHeader>
+							<CardContent>
+								<ul className="space-y-2 text-foreground/85">
+									<li>{t("card4.p1")}</li>
+									<li>{t("card4.p2")}</li>
+									<li>{t("card4.p3")}</li>
+									<li>{t("card4.p4")}</li>
+									<li>{t("card4.p5")}</li>
+								</ul>
+								<div className="mt-4 flex flex-wrap gap-2">
+									<Badge variant="secondary">Next.js</Badge>
+									<Badge variant="secondary">TypeScript</Badge>
+									<Badge variant="secondary">Drizzle</Badge>
+									<Badge variant="secondary">Turso</Badge>
+									<Badge variant="secondary">NextAuth</Badge>
+									<Badge variant="secondary">Stripe</Badge>
+									<Badge variant="secondary">Resend</Badge>
+									<Badge variant="secondary">Web Push</Badge>
+									<Badge variant="secondary">Docker</Badge>
 								</div>
 							</CardContent>
 						</Card>
@@ -484,6 +567,12 @@ export default function HomePage({
 										<Link href="mailto:lucssslucsss@gmail.com">
 											<Mail className="mr-2 h-4 w-4" />
 											{t("about.emial_me")}
+										</Link>
+									</Button>
+									<Button variant="secondary" asChild>
+										<Link href="https://x.com/lss_lss_" target="_blank" rel="noopener noreferrer">
+											<Twitter className="mr-2 h-4 w-4" />
+											X / Twitter
 										</Link>
 									</Button>
 									<Button variant="outline" asChild>
